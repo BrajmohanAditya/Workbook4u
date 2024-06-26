@@ -85,7 +85,8 @@ button {
     color: white;  
 }
 .colorButton.clicked {
-  background-color: #1bb6a4b1;
+  background-color: #1bb6a4e4;
+  border: #007bff;
 }
 
 
@@ -308,4 +309,44 @@ body {
 /* Spacing btween button and meaning */
 #hi{
   margin-left:3rem;
+}
+
+/* Pronunceation  */
+
+.sita{
+  position: absolute;
+  bottom:4rem;
+  right: -10px;
+  
+ }
+ #pronounceBtn{
+  margin: 2px;
+  width: 4rem;
+  height: 2.5rem;
+  background-color: #28a745;
+  appearance: none;
+  border: 1px solid #28a745;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+ #pronounceBtn:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+ #word{
+  height: 2rem;
+  width: 12rem;
+  border-color: #050101;
+  border-radius: 6px;
+  
+ }
+ 
+  .fa-microphone{
+    font-size: 1.5rem;
+  }
+ 
+  #word::placeholder {
+    color: rgba(0, 0, 0, 0.848); /* Change placeholder text color */
+    font-size: large;
 }

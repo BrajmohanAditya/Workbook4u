@@ -76,6 +76,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         <button class="colorButton" onclick="showPage(23)"> 23</button>
     </div>
 </div>
+<Div class="sita">
+  <input type="text" id="word" placeholder="Pronounce">
+  <!-- <button id="pronounceBtn">Pronounce</button> -->
+  <button id="pronounceBtn"><i class="fas fa-microphone"></i></button>
+
+
+  <script>
+      document.getElementById('pronounceBtn').addEventListener('click', function() {
+          // Get the word from the input field
+          let word = document.getElementById('word').value;
+
+          // Create a new instance of SpeechSynthesisUtterance
+          let utterance = new SpeechSynthesisUtterance(word);
+
+          // Set the language to English (optional)
+          utterance.lang = 'en-IN';
+
+          utterance.rate = 0.35;
+
+          // Use the speechSynthesis interface to speak the word
+          window.speechSynthesis.speak(utterance);
+      });
+  </script>
+</Div>
+
+
+
 
 <script>
     function showPage(pageNum) {
@@ -898,17 +925,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
                 else if(pageNum==9){
                 contentContainer.innerHTML= `
                 <div class="scrollbar">
+<div>Substantive<span id="absolute" class="hover">Basic, Substantive need</span></div>
+<div>Consistent <span id="absolute" class="hover">तकयुक्तर्</span></div>
+<div>Impart <span id="absolute" class="hover">Spread. Impart knowledge</span></div>
+<div>Digital forensics
+  <div class="popup" onclick="myFunction('p9_pop1')"><i class="fa-solid fa-play"></i>
+      <span class="popuptext" id="p9_pop1">Investigating and analyzing digital devices and data to gather evidence</span>
+  </div>
+</div>
 
-<div>Digital forensics<span id="absolute" class="hover">investigating and analyzing digital devices and data to gather evidence</span></div>
-<div>impart <span id="absolute" class="hover">spread</span></div>
-<div>􀂽􀂿􀂣􀂽􀂾􀂢􀂸􀂾􀂯􀃀􀂧􀀃􀆟􀀃􀂣􀂢􀂽􀂯􀂥􀀃􀆊􀀃􀂽􀂿􀂣􀂽􀂾􀂢􀂸􀂾􀂯􀃀􀂧􀀃􀂸􀂧􀂧􀂦<span id="absolute" class="hover"></span></div>
-<div>consistent <span id="absolute" class="hover">तकयुक्तर्</span></div>
-<div>sore thumb <span id="absolute" class="hover">दुखते अंगूtha</span></div>
-<div>scuffle <span id="absolute" class="hover">हाथापाई</span></div>
-<div>strife <span id="absolute" class="hover">conflict</span></div>
-<div>attrition <span id="absolute" class="hover">erosion , abrasion</span></div>
-<div>accretion <span id="absolute" class="hover">accumulation</span></div>
-<div>subversion <span id="absolute" class="hover">िवनाश, destruction</span></div>
+<div>Sore <span id="absolute" class="hover">Painful, in pain</span></div>
+<div>Scuffle <span id="absolute" class="hover">Fight, हाथापाई</span></div>
+<div>Strife <span id="absolute" class="hover">conflict</span></div>
+<div>Attrition <span id="absolute" class="hover">Erosion , Abrasion</span>
+  <div class="popup" onclick="myFunction('p9_pop2')"><i class="fa-solid fa-play"></i>
+      <span class="popuptext" id="p9_pop2">Attrition in the workforce has led to a significant decrease in productivity.</span>
+  </div>
+</div>
+<div>Accretion <span id="absolute" class="hover">Accumulation, Collection.</span></div>
+<div>Subversion <span id="absolute" class="hover"> Destruction, Annihilation</span>
+  <div class="popup" onclick="myFunction('p9_pop3')"><i class="fa-solid fa-play"></i>
+      <span class="popuptext" id="p9_pop3">The ruthless subversion of democracy</span>
+  </div>
+</div>
 <div>A composite number is a natural number or a positive integer which has more than two factors.</div>
 <div>Co-prime numbers are pairs of numbers that do not have any common factor other than 1.</div>
 <div>Portray <span id="absolute" class="hover">show , present, portraying India and Israel as shared victims of terrorism is dangerous.</span></div>
@@ -920,10 +959,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <div>accuse <span id="absolute" class="hover">दोष लगाना</span></div>
 <div>lackadaisical <span id="absolute" class="hover">uninterested , indifferent</span></div>
 <div>evidence <span id="absolute" class="hover">is uncountable</span></div>
-<div>foment <span id="absolute" class="hover">भड़काना</span></div>
-<div>unleash <span id="absolute" class="hover">begin</span></div>
-<div>tumult <span id="absolute" class="hover">a loud, confused noise,</span></div>
-<div>repose <span id="absolute" class="hover">a state of rest, sleep,</span></div>
+<div>Foment <span id="absolute" class="hover">भड़काना, Instigate</span></div>
+<div>Unleash <span id="absolute" class="hover">begin</span></div>
+<div>Tumult <span id="absolute" class="hover">a loud, confused noise,</span></div>
+<div>Repose <span id="absolute" class="hover">A state of rest, Sleep</span></div>
 <div>radical Islamic outfit <span id="absolute" class="hover">कट्टरपंथी इस्लामी संगठन</span></div>
 
 </div>
