@@ -323,7 +323,7 @@ body {
   margin: 2px;
   width: 4rem;
   height: 2.5rem;
-  background-color: #28a745;
+  background-color: #0ad639;
   appearance: none;
   border: 1px solid #28a745;
   cursor: pointer;
@@ -336,7 +336,7 @@ body {
 
  #word{
   height: 2rem;
-  width: 12rem;
+  width: 13rem;
   border-color: #050101;
   border-radius: 6px;
   
@@ -350,3 +350,5 @@ body {
     color: rgba(0, 0, 0, 0.848); /* Change placeholder text color */
     font-size: large;
 }
+
+
